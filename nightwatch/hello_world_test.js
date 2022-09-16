@@ -9,9 +9,9 @@ module.exports = {
             .click('input[type=submit')
             .waitForElementVisible('.results--main')
             .assert.visible('#r1-0')
-            .assert.visible('#r1-0 .result__a')
-            .assert.containsText('#r1-0 .result__a', 'Hello world — Wikipédia')
-            .click('#r1-0 .result__a')
+            .assert.visible('#r1-0 .eVNpHGjtxRBq_gLOfGDr')
+            .assert.containsText('#r1-0 .eVNpHGjtxRBq_gLOfGDr', 'Hello world — Wikipédia')
+            .click('#r1-0 .eVNpHGjtxRBq_gLOfGDr')
             .assert.visible('#firstHeading')
             .assert.containsText('#firstHeading', 'Hello world')
     }

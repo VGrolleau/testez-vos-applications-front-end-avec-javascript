@@ -1,16 +1,17 @@
 {
   "src_folders" : ["nightwatch"],
 
-  "webdriver" : {
-    "start_process": true,
-    "server_path": "node_modules/.bin/geckodriver",
-    "port": 9515
-  },
-
-  "test_settings" : {
-    "default" : {
-      "desiredCapabilities": {
-        "browserName": "firefox"
+  "test_settings": {
+    "default": {
+      "capabilities" : {
+        "browserName" : "firefox",
+        "acceptInsecureCerts": true
+      },
+      "webdriver": {
+        "start_process": true,
+        "server_path": "node_modules/.bin/geckodriver",
+        "host": "127.0.0.1",
+        "port": 4444
       }
     }
   }
